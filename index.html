@@ -41,8 +41,9 @@
         }
 
         .imagenes_deco {
-            width: 550px;
-            height: 550px;
+            width: 35vw;
+            height: auto;
+            max-width: 550px;
             /* CAMBIA ESTO: de cover a contain */
             object-fit: contain;
             position: absolute;
@@ -52,8 +53,10 @@
 
 
         .imagenes_cat {
-            width: 300px;
-            height: 300px;
+            width: 20vw;
+            height: auto;
+            max-width: 300px;
+            min-width: 120px;
             /* CAMBIA ESTO: de cover a contain */
             object-fit: contain;
             position: absolute;
@@ -227,7 +230,7 @@
         }
 
         .numero20 {
-            font-size: 220px;
+            font-size: clamp(100px, 25vw, 220px);
             font-weight: 900;
 
             background: linear-gradient(45deg,
@@ -379,9 +382,9 @@
         <source src="miau.mp3" type="audio/mpeg">
     </audio>
 
-    <img src="gato1.png" class="imagenes_cat" style="top: 60%; left: 62%;" data-sonido="miau1.mp3">
-    <img src="gato2.png" class="imagenes_cat" style="top: 62%; right: 5%;" data-sonido="miau2.mp3">
-    <img src="gato3.png" class="imagenes_cat" style="bottom: 5%; left: 15%;" data-sonido="miau3.mp3">
+    <img src="gato1.png" class="imagenes_cat" style="top: 30%; left: 80%;" data-sonido="miau1.mp3">
+    <img src="gato2.png" class="imagenes_cat" style="top: 47%; right: 63%;" data-sonido="miau2.mp3">
+    <img src="gato3.png" class="imagenes_cat" style="bottom: 50%; left: 62%;" data-sonido="miau3.mp3">
     <img src="gato4.png" class="imagenes_cat" style="bottom: -7%; left: 4%;" data-sonido="miau4.mp3">
 
     <img src="decoracion2.PNG" class="imagenes_deco" style="bottom: 35%; left: -5%;">
